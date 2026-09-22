@@ -1,0 +1,17 @@
+{
+  "name": "taskflow",
+  "version": "1.0.0",
+  "description": "A component-based Todo app in vanilla JavaScript",
+  "scripts": {
+    "build": "npm run build:js && npm run build:css && npm run build:html",
+    "build:js": "esbuild app.js --minify --outfile=dist/app.js",
+    "build:css": "cleancss -o dist/styles.css styles.css",
+    "build:html": "html-minifier-terser --collapse-whitespace --remove-comments --minify-css --minify-js --output dist/index.html index.html",
+    "start": "npx serve dist -p 4000"
+  },
+  "devDependencies": {
+    "clean-css-cli": "^5.6.3",
+    "esbuild": "^0.20.0",
+    "html-minifier-terser": "^7.2.0"
+  }
+}
