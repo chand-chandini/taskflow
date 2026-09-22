@@ -6,5 +6,5 @@ A component-based Todo application built with **vanilla JavaScript** — no fram
 
 1. Clone the repo:
    ```bash
-   git clone <your-repo-url>
+   git clone [<your-repo-url>](https://github.com/chand-chandini/taskflow)
    cd todo-app
